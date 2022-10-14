@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title> predicting weight</title>
+	<style>
+		#submit{  
+    width: 200px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: #f44336;
+  
+}  
+	</style>
+</head>
+<body bgcolor="lightgrey">
+<center>
+	<br>
+	<h1>Iris Prediction </h1>
+    <br>
+	<form method="POST" action="{{ url_for('home1')}}">
+		
+	SEPAL LENGTH:<input type="text" name="sl" placeholder="enter sepal length">
+	<br><br>
+	SEPAL WIDTH:<input type="text" name="sw" placeholder="enter sepal width">
+	<br><br>
+    PETAL LENGTH:<input type="text" name="pl" placeholder="enter petal length">
+	<br><br>
+	PETAL WIDTH:<input type="text" name="pw" placeholder="enter petal width">
+	<br><br>
+	<input type="submit" id="submit" value="SUBMIT">
+	</form>
+	
+</center>
+</body>
+</html>
